@@ -1,6 +1,8 @@
-# Sanity Clean Content Studio
+# Sean's Sanity Content Schema
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+This monorepo will be used to define the sanity schema for I use for my portfolio, bulletin, and other future projects.
+
+### Miscellaneous links that came with bootstrap command:
 
 Now you can do the following things:
 
