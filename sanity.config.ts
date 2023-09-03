@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Sean Content',
 
-  projectId: 'jeldjcfi',
+  projectId: process.env.SANITY_PROJECT_ID!,
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
