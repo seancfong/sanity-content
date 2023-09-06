@@ -61,10 +61,10 @@ export const showcasePage = defineType({
       title: 'Projects',
       type: 'array',
       of: [
-        {
+        defineArrayMember({
           type: 'reference',
           to: {type: 'project'},
-        },
+        }),
       ],
     }),
   ],

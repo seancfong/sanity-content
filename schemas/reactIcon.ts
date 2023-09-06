@@ -12,7 +12,10 @@ export const reactIcon = defineType({
       name: 'library',
       type: 'string',
       options: {
-        list: [{title: 'Bs', value: 'Bs'}],
+        list: [
+          {title: 'Bs', value: 'Bs'},
+          {title: 'Si', value: 'Si'},
+        ],
       },
     }),
     defineField({
@@ -20,11 +23,19 @@ export const reactIcon = defineType({
       name: 'name',
       type: 'string',
     }),
+    defineField({
+      title: 'Imported',
+      name: 'imported',
+      type: 'boolean',
+      options: {
+        layout: 'checkbox',
+      },
+    }),
   ],
   preview: {
     select: {
       title: 'name',
-      subtitle: 'library',
+      subtitle: 'imported',
     },
   },
 })

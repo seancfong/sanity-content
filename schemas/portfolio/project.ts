@@ -18,6 +18,11 @@ export const project = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'date',
+      title: 'Date',
+      type: 'string',
+    }),
+    defineField({
       name: 'featuredImage',
       title: 'Featured Image',
       type: 'image',
@@ -53,7 +58,7 @@ export const project = defineType({
           fields: [
             defineField({
               title: 'Link URL',
-              name: 'linkUrl',
+              name: 'linkURL',
               type: 'string',
             }),
             defineField({
@@ -74,16 +79,10 @@ export const project = defineType({
       type: 'array',
       of: [
         defineArrayMember({
-          name: 'techStackItem',
-          type: 'object',
-          icon: BsTools,
-          fields: [
-            defineField({
-              title: 'Content',
-              name: 'content',
-              type: 'string',
-            }),
-          ],
+          type: 'reference',
+          to: {
+            type: 'skill',
+          },
         }),
       ],
     }),
