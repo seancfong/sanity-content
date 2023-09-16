@@ -57,6 +57,11 @@ export const project = defineType({
           icon: BsLink45Deg,
           fields: [
             defineField({
+              title: 'Tooltip',
+              name: 'linkTooltip',
+              type: 'string',
+            }),
+            defineField({
               title: 'Link URL',
               name: 'linkURL',
               type: 'string',
